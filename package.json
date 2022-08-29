@@ -1,0 +1,27 @@
+{
+  "name": "tscopy",
+  "version": "1.0.0",
+  "description": "Copy a typescript project from somewhere to otherwhere. Just like `cp` but patch import syntaxes.",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "tscopy": "bin/tscopy.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:zphhhhh/tscopy.git"
+  },
+  "keywords": [
+    "typescript",
+    "copy"
+  ],
+  "author": "zphhhhh",
+  "license": "ISC",
+  "dependencies": {
+    "minimatch": "^3.0.2 || ^4 || ^5",
+    "typescript": "^4"
+  }
+}
