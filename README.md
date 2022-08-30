@@ -12,6 +12,8 @@ Copy a typescript project from somewhere to otherwhere. Just like `cp` but patch
 
 1. in CLI
 
+`tscopy source target [--ignore=]`
+
 `tscopy ./zph/myproject ./zph/hisproject/src/submodule/myproject [--ignore=node_modules,package.json]`
 
 We will `mkdir ./zph/hisproject/src/submodule/myproject` then put files on `./zph/myproject`
@@ -48,6 +50,8 @@ The `tsconfig.json` in `./myproject`:
   }
 }
 ```
+
+`tscopy ./zph/myproject ./zph/hisproject/src/submodule/myproject`
 
 Before in `./zph/myproject/src/index.tsx`:
 

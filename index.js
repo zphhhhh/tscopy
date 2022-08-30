@@ -1,3 +1,5 @@
+import fs from 'fs';
+import path from 'path';
 import copy from './lib/copy.js';
 
 /**
