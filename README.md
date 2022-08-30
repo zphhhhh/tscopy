@@ -10,11 +10,27 @@ Copy a typescript project from somewhere to otherwhere. Just like `cp` but patch
 
 ### Usage
 
+1. in CLI
+
 `tscopy ./zph/myproject ./zph/hisproject/src/submodule/myproject [--ignore=node_modules,package.json]`
 
 We will `mkdir ./zph/hisproject/src/submodule/myproject` then put files on `./zph/myproject`
 
-- `ignore`: split with `,`, ignore some files, defaults to `--ignore=node_modules`.
+- `ignore`: string. Split with `,`, ignore some files, defaults to `node_modules`.
+
+1. in Node
+
+```js
+import tscopy from 'tscopy';
+
+tscopy({
+  source: './zph/myproject',
+  target: './zph/hisproject/src/submodule/myproject',
+  ignore: [ 'node_modules', /package\.json/ ]
+});
+```
+
+- `ignore`: string | (string | RegExp)[].
 
 ### Description
 
